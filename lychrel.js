@@ -1,7 +1,5 @@
 'use strict';
 
-let i = 1;
-
 function lychrel (num) {
     let iterations = 0;
     const origin = num;
