@@ -9,7 +9,7 @@ const lychrel = (num) => {
 
         iterations++;
 
-        if (iterations == Math.pow(10, 6)) {
+        if (iterations == Math.pow(10, 5)) {
             console.log(origin + ' is infinite lychrel');
         }
     }
