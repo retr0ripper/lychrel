@@ -1,10 +1,10 @@
 'use strict';
 
-function lychrel (num) {
+const lychrel = (num) => {
     let iterations = 0;
     const origin = num;
 
-    while (num != getPalindrome(num)) {
+    while (num !== getPalindrome(num)) {
         num = num + getPalindrome(num);
 
         iterations++;
@@ -17,10 +17,9 @@ function lychrel (num) {
     return num;
 }
 
-function getPalindrome (i) {
+const getPalindrome = (i) => {
     return +((i + '').split('').reverse().join(''))
 }
-
 
 while (i < Number.MAX_SAFE_INTEGER) {
     lychrel(i);
