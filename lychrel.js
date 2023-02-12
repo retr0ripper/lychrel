@@ -1,5 +1,7 @@
 'use strict';
 
+let i = 0;
+
 const lychrel = (num) => {
     let iterations = 0;
     const origin = num;
@@ -11,6 +13,7 @@ const lychrel = (num) => {
 
         if (iterations === Math.pow(10, 5)) {
             console.log(origin + ' is infinite lychrel');
+            break;
         }
     }
 
